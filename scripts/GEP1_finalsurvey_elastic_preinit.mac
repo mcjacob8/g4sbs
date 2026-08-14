@@ -23,9 +23,9 @@
 
 ## Configure standard detector settings
 /g4sbs/gemres          0.070 mm
-/g4sbs/hcaldist        10.00531 m # adjusted to reflect survey result
+/g4sbs/hcaldist        10.00387 m # adjusted to reflect survey results
 /g4sbs/hcalvoffset     75.144 cm # NOTE: this value is taken from survey A2143
-/g4sbs/hcalhoffset     0.665 cm # number from survey A2143
+/g4sbs/hcalhoffset     1.573 cm # number from survey A2143
 /g4sbs/sbsclampopt     2
 
 ## Configure the magnets
@@ -35,11 +35,11 @@
 /g4sbs/bbang           29.46 deg
 /g4sbs/bbdist          7.9923 m # survey distance to ECAL surface, adjusted for target offset and mispointing
 /g4sbs/sbsang          25.756 deg # survey angle
-/g4sbs/48D48dist       1.59782 m # survey distance
+/g4sbs/48D48dist       1.59638 m # Distance from SBS pointing origin according to survey
 
 # the following offsets reflect our best understanding/interpretation of the Kin. 1 survey results:
-/g4sbs/ecalhorizoffset -6.001 cm
-/g4sbs/ecalvertoffset -1.775 cm 
+/g4sbs/ecalhorizoffset -6.0013 cm
+/g4sbs/ecalvertoffset -1.756 cm 
 
 /g4sbs/usehadronfilter false
 /g4sbs/leadwallconnect true

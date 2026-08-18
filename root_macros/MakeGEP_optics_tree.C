@@ -235,7 +235,7 @@ void MakeGEP_optics_tree( const char *inputfilename, const char *outputfilename,
 	beta = p/sqrt(pow(p,2)+pow(Mp,2));
 	gamma = sqrt(1.0 + pow(p/Mp,2));
 
-	vx = T->ev_vz;
+	vx = T->ev_vx;
 	vy = T->ev_vy;
 	vz = T->ev_vz;
 	

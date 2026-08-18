@@ -39,7 +39,7 @@ void MakeGEP_optics_tree( const char *inputfilename, const char *outputfilename,
   double xfp, yfp, xpfp, ypfp, t; //include time-of-flight!
   
   double xfprecon,yfprecon,xpfprecon,ypfprecon; //includes detector resolution!
-  double xtar, ytar, xptar, yptar, p, vz;
+  double xtar, ytar, xptar, yptar, p, vx, vy, vz;
   double chi, chiphi; //usual dipole precession angles
   //Euler angles for the trajectory bend:
   double phitrack, thetatrack, psitrack;
@@ -67,6 +67,8 @@ void MakeGEP_optics_tree( const char *inputfilename, const char *outputfilename,
   Tout->Branch("xptar",&xptar);
   Tout->Branch("yptar",&yptar);
   Tout->Branch("p",&p);
+  Tout->Branch("vx",&vx);
+  Tout->Branch("vy",&vy);
   Tout->Branch("vz",&vz);
   Tout->Branch("chi",&chi);
   Tout->Branch("chiphi",&chiphi);
@@ -233,6 +235,8 @@ void MakeGEP_optics_tree( const char *inputfilename, const char *outputfilename,
 	beta = p/sqrt(pow(p,2)+pow(Mp,2));
 	gamma = sqrt(1.0 + pow(p/Mp,2));
 
+	vx = T->ev_vz;
+	vy = T->ev_vy;
 	vz = T->ev_vz;
 	
 	//Now need target quantities!

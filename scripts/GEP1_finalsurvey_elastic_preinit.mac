@@ -38,7 +38,7 @@
 /g4sbs/48D48dist       1.59638 m # Distance from SBS pointing origin according to survey
 
 # the following offsets reflect our best understanding/interpretation of the Kin. 1 survey results:
-/g4sbs/ecalhorizoffset -6.0013 cm
+/g4sbs/ecalhorizoffset -6.00145 cm 
 /g4sbs/ecalvertoffset -1.756 cm 
 
 /g4sbs/usehadronfilter false
